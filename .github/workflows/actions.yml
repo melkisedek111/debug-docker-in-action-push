@@ -23,6 +23,6 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Run tests from the built image
-      run: docker run survey-form sh -c "npm test"
+      run: docker run debug-docker-in-action-push sh -c "npm test"
     - name: Compose down the docker
       run: docker-compose -f "docker-compose.yml" down
